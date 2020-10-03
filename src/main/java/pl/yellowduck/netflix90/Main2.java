@@ -19,7 +19,7 @@ public class Main2 {
     Actor tommyActor = new Actor("Tommy", "Wiseau", MALE);
     Actor julitette = new Actor("Juliette", "Danielle", FEMALE);
     Actor greg = new Actor("Greg", "Sestero", MALE);
-    Category category = new Category(1, "Drama", "Drama");
+    Category category = new Category( "Drama", "Drama");
 
     Set<Actor> actors = new HashSet<>();
     actors.add(tommyActor);
