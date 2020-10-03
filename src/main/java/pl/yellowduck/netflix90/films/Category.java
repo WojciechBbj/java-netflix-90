@@ -1,4 +1,8 @@
 package pl.yellowduck.netflix90.films;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /*
 public enum Category {
   COMEDY, // orinal value 0
@@ -14,13 +18,14 @@ public enum Category {
   ACTION; // orinal value 4
 }
 */
-
+@Entity
 public class Category {
+  @Id
   private Integer id;
   private String name;
   private String description;
 
-  public Category() {
+  private Category() {
   }
 
   public Category(Integer id, String name, String description) {
